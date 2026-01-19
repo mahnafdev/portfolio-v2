@@ -69,7 +69,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${rubik.className} antialiased`}>{children}</body>
+			<body
+				className={`${rubik.className} antialiased selection:bg-primary selection:text-background scroll-smooth`}
+			>
+				{children}
+			</body>
 		</html>
 	);
 }
