@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {} from "next/font/google";
+import { Hammersmith_One, Rubik } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -49,6 +49,19 @@ export const metadata: Metadata = {
 	],
 };
 
+export const hammersmithOne = Hammersmith_One({
+	weight: ["400"],
+	display: "swap",
+	subsets: ["latin"],
+});
+
+export const rubik = Rubik({
+	weight: ["300", "400", "500", "600", "700"],
+	display: "swap",
+	subsets: ["latin"],
+	style: ["normal", "italic"],
+});
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -56,7 +69,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`antialiased`}>{children}</body>
+			<body className={`${rubik.className} antialiased`}>{children}</body>
 		</html>
 	);
 }
