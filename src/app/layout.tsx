@@ -1,5 +1,7 @@
+import { Providers } from "@/components/Providers";
 import type { Metadata } from "next";
 import { Hammersmith_One, Rubik } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -65,14 +67,17 @@ export const rubik = Rubik({
 export default function RootLayout({
 	children,
 }: Readonly<{
-	children: React.ReactNode;
+	children: ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			suppressHydrationWarning
+		>
 			<body
 				className={`${rubik.className} antialiased selection:bg-primary selection:text-background scroll-smooth`}
 			>
-				{children}
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);
