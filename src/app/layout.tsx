@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Hammersmith_One, Rubik } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
 	metadataBase: "https://ahnaf.my",
@@ -77,7 +78,10 @@ export default function RootLayout({
 			<body
 				className={`${rubik.className} antialiased selection:bg-primary selection:text-background scroll-smooth`}
 			>
-				<Providers>{children}</Providers>
+				<Providers>
+					<Navbar />
+					{children}
+				</Providers>
 			</body>
 		</html>
 	);
