@@ -1,6 +1,6 @@
 export const styles = {
 	nav: {
-		maxWidth: "42rem",
+		maxWidth: "36rem",
 		marginInline: "auto",
 		paddingInline: "2rem",
 		paddingBlock: "0.75rem",
@@ -13,7 +13,14 @@ export const styles = {
 	logo_Active: {
 		rotate: "-4deg",
 	},
+	link: {
+		paddingInline: "0.625rem",
+		paddingBlock: "0.3rem",
+		borderRadius: "0.4rem",
+		cornerShape: "scoop",
+	},
 	link_Hover: {
+		backgroundColor: "#061e1e",
 		color: "#1fce84",
 		scale: 1.05,
 	},
