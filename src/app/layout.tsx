@@ -76,7 +76,7 @@ export default function RootLayout({
 			suppressHydrationWarning
 		>
 			<body
-				className={`${rubik.className} antialiased selection:bg-primary selection:text-background scroll-smooth`}
+				className={`${rubik.className} antialiased selection:bg-primary selection:text-background scroll-smooth h-[200vh]`}
 			>
 				<Providers>
 					<Navbar />

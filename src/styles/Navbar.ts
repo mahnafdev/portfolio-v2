@@ -1,8 +1,8 @@
 export const styles = {
 	nav: {
-		maxWidth: "36rem",
+		maxWidth: "34rem",
 		marginInline: "auto",
-		paddingInline: "2rem",
+		paddingInline: "1.75rem",
 		paddingBlock: "0.75rem",
 		borderBottomRightRadius: "1rem",
 		borderBottomLeftRadius: "1rem",

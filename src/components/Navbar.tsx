@@ -3,10 +3,10 @@ import { Flex, Image, Link } from "@chakra-ui/react";
 
 export const Navbar = () => {
 	return (
-		<header className="fixed top-0 left-[50%] translate-x-[-50%] w-full">
+		<header className="fixed top-0 left-[50%] translate-x-[-50%] w-full z-20">
 			<nav
 				style={styles.nav}
-				className="max-w-xl bg-[#101313]/95 mx-auto px-8 py-3 flex justify-between items-center rounded-b-xl backdrop-blur-md"
+				className="max-w-136 bg-[#101313]/85 mx-auto px-7 py-3 flex justify-between items-center rounded-b-xl backdrop-blur"
 			>
 				{/* Logo */}
 				<div>
